@@ -240,3 +240,36 @@ footer ul li{
 .flex-social img{
     padding: 0px 20px;
 }
+
+/* HOVER */
+
+a{
+    text-decoration: none;
+}
+
+footer li a:visited{
+    color: hsl(168, 34%, 41%);
+}
+
+footer li a:hover{
+    color: white;
+}
+
+.learns:hover{
+    text-decoration: 7px hsla(7, 99%, 70%,) underline;
+    cursor: pointer;
+}
+
+.learnt:hover{
+    text-decoration: 7px hsl(51, 100%, 49%) underline;
+    cursor: pointer;
+}
+
+#contact:hover{
+    color: white;
+    background-color: #6FCFFF;
+}
+
+header ul li{
+    cursor: pointer;
+}
