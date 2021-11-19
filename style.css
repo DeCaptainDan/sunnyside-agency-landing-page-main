@@ -14,7 +14,7 @@ body{
 
 header{
     padding: 20px 10px 0px;
-    background-image: url(/images/desktop/image-header.jpg);
+    background-image: url(./images/desktop/image-header.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -112,7 +112,7 @@ img.fit{
 }
 
 .graphic{
-    background-image: url(/images/desktop/image-graphic-design.jpg);
+    background-image: url(./images/desktop/image-graphic-design.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -137,7 +137,7 @@ img.fit{
 }
 
 .photo{
-    background-image: url(/images/desktop/image-photography.jpg);
+    background-image: url(./images/desktop/image-photography.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
