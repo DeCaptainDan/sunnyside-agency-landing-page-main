@@ -340,7 +340,7 @@ nav{
         font-family: 'Barlow', sans-serif;
     }
       
-    .dropdown:hover .dropdown-content {
+    .dropdown:hover, .dropdown-content {
         display: block;
     }
 
@@ -367,8 +367,6 @@ nav{
         letter-spacing: 5px;
         font-size: 40px;
     }
-
-/* } */
 
     .flextextimg{
         flex-direction: column;
