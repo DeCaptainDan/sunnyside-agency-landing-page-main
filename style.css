@@ -10,7 +10,6 @@ body{
     font-family: 'Barlow', sans-serif;
     font-family: 'Fraunces', serif;
     font-size: 18px;
-    overflow-x: hidden;
 }
 
 header{
@@ -287,7 +286,194 @@ nav{
     fill: white;
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 350px) {
+    
+    header{
+        padding: 40px 20px 0px;
+    }
+
+    #flex-head{
+        display: inline;
+        align-items: center;
+        padding: 0px;
+    }
+
+    .dropdown{
+        position: relative;
+        float: right;
+        display: inline;
+        align-self: center;
+    }
+
+    .menu {
+        cursor: pointer;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: white;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        right: 0;
+        text-align: center;
+        padding: 20px 20px 30px;
+        font-size: 16px;
+    }
+
+    .dropdown-content a {
+        color: hsl(210, 4%, 67%);
+        padding: 12px 18px;
+        text-decoration: none;
+        display: block;
+        font-family: 'Barlow', sans-serif;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .menus:hover{
+        fill: #6FCFFF;
+    }
+
+    #contact-menu{
+        background-color: hsl(51, 100%, 49%);
+        font-family: 'Fraunces', serif;
+        text-transform: uppercase;
+        color: hsl(212, 27%, 19%);
+        border-radius: 30px;
+        font-size: 12px;
+        margin-top: 15px;
+    }
+
+    nav{
+        display: none;
+    }
+
+    header h1{
+        margin-top: 70px;
+        letter-spacing: 5px;
+        font-size: 30px;
+    }
+
+    .arrow-down{
+        position: relative;
+        left: 50%;
+        margin-top: 40px;
+    }
+
+    .flextextimg{
+        flex-direction: column;
+    }
+
+    .half{
+        flex: 100%;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .flextextimg h2{
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+
+    .transform, .stand{
+        margin: 40px 10px 50px;
+        text-align: center;
+    }
+
+    .transform p, .stand p{
+        line-height: 1.5;
+        font-size: 16px;
+    }
+
+    .learns, .learnt{
+        margin-top: 30px;
+    }
+
+    .headpara{
+        margin: 400px 10px 50px;
+        font-size: 16px;
+    }
+
+    .graphic p, .photo p{
+        opacity: 1;
+        line-height: 1.5;
+    }
+
+    #main{
+        margin: 50px 10px;
+    }
+
+    #main h2{
+        letter-spacing: 4px;
+        margin-bottom: 30px;
+        font-size: 16px;
+    }
+
+    .peopleflex{
+        flex-direction: column;
+    }
+
+    .people{
+        padding: 30px 1px;
+        flex: 100%;
+    }
+
+    #main img{
+        border-radius: 50px;
+        width: 50px;
+        height: 50px;
+        margin-bottom: 20px;
+    }
+
+    .para{
+        margin-bottom: 25px;
+        font-size: 16px;
+    }
+
+    .pics{
+        flex-wrap: wrap;
+    }
+
+    .picflex{
+        flex: 50%;
+        max-width: 50%;
+    }
+
+    .foot{
+        padding: 40px 0px 50px;
+    }
+
+    .flex-logo{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    .foot ul {
+        margin-bottom: 50px;
+    }
+
+    .foot ul li{
+        padding: 5px 10px;
+    }
+
+    .flex-social{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .flex-social a{
+        margin: 0px 4px;
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 530px){
 
     header{
         padding: 40px 30px 0px;
@@ -584,6 +770,10 @@ nav{
     .para{
         margin-bottom: 35px;
     }
+
+    .foot ul li{
+        padding: 10px 15px;
+    }
 }
 
 @media screen and (max-width: 1050px) {
@@ -608,21 +798,6 @@ nav{
 
     .people{
         padding: 30px 10px;
-    }
-}
-
-@media screen and (max-width: 1230px) {
-
-    .headpara{
-        margin: 400px 130px 70px;
-    }
-
-    #main{
-        margin: 90px 20px;
-    }
-
-    .people{
-        padding: 30px 20px;
     }
 }
 
