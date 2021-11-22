@@ -10,6 +10,7 @@ body{
     font-family: 'Barlow', sans-serif;
     font-family: 'Fraunces', serif;
     font-size: 18px;
+    overflow-x: hidden;
 }
 
 header{
@@ -120,8 +121,7 @@ img.fit{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    color: hsl(167, 40%, 24%);
-    
+    color: hsl(167, 40%, 24%);   
 }
 
 .headpara{
@@ -172,7 +172,6 @@ img.fit{
     justify-content: center;
     text-align: center;
     flex-wrap: wrap;
-    align-content: center;
 }
 
 .people{
@@ -184,7 +183,7 @@ img.fit{
     border-radius: 100px;
     width: 100px;
     height: 100px;
-    margin-bottom: 70px;
+    margin-bottom: 60px;
 }
 
 .para{
@@ -266,7 +265,7 @@ footer li:hover{
 }
 
 .learns:hover{
-    text-decoration: 7px hsla(7, 99%, 70%,) underline;
+    text-decoration: 7px hsla(7, 99%, 70%) underline;
     cursor: pointer;
 }
 
@@ -288,18 +287,9 @@ nav{
     fill: white;
 }
 
-
-/* Media Queries */
-
 @media screen and (max-width: 500px){
 
-    body{
-        overflow-wrap: break-word;
-    }
-
     header{
-        background-image: url(./images/mobile/image-header.jpg);
-        min-height: 90vh;
         padding: 40px 30px 0px;
     }
 
@@ -312,14 +302,14 @@ nav{
     .dropdown{
         position: relative;
         float: right;
-        display: none;
+        display: inline;
         align-self: center;
     }
 
     .menu {
         cursor: pointer;
     }
-      
+
     .dropdown-content {
         display: none;
         position: absolute;
@@ -331,7 +321,7 @@ nav{
         padding: 20px 40px 30px;
         font-size: 16px;
     }
-      
+
     .dropdown-content a {
         color: hsl(210, 4%, 67%);
         padding: 12px 22px;
@@ -339,8 +329,8 @@ nav{
         display: block;
         font-family: 'Barlow', sans-serif;
     }
-      
-    .dropdown:hover, .dropdown-content {
+
+    .dropdown:hover .dropdown-content {
         display: block;
     }
 
@@ -368,10 +358,16 @@ nav{
         font-size: 40px;
     }
 
+    .arrow-down{
+        position: relative;
+        left: 50%;
+        margin-top: 40px;
+    }
+
     .flextextimg{
         flex-direction: column;
     }
-    
+
     .half{
         flex: 100%;
         max-width: 100%;
@@ -382,37 +378,34 @@ nav{
         font-size: 33px;
         margin-bottom: 25px;
     }
-    
+
     .transform, .stand{
         margin: 50px 20px 60px;
         text-align: center;
     }
-    
+
     .transform p, .stand p{
         line-height: 1.75;
     }
-    
+
     .learns, .learnt{
         margin-top: 30px;
     }
-    
+
     .headpara{
         margin: 400px 20px 70px;
+        font-size: 16px;
     }
-    
-    .headpara h3{
-        font-size: 20px;
-    }
-    
+
     .graphic p, .photo p{
         opacity: 1;
         line-height: 1.5;
     }
 
     #main{
-        margin: 50px 20px;
+        margin: 70px 20px;
     }
-    
+
     #main h2{
         letter-spacing: 5px;
         margin-bottom: 30px;
@@ -422,19 +415,19 @@ nav{
     .peopleflex{
         flex-direction: column;
     }
-    
+
     .people{
         padding: 30px 1px;
         flex: 100%;
     }
 
     #main img{
-        border-radius: 80px;
-        width: 80px;
-        height: 80px;
+        border-radius: 70px;
+        width: 70px;
+        height: 70px;
         margin-bottom: 30px;
     }
-    
+
     .para{
         margin-bottom: 35px;
     }
@@ -442,37 +435,37 @@ nav{
     .pics{
         flex-wrap: wrap;
     }
-    
+
     .picflex{
         flex: 50%;
         max-width: 50%;
     }
-    
+
     .foot{
         padding: 60px 0px 70px;
     }
-    
+
     .flex-logo{
         display: flex;
         justify-content: center;
         margin-bottom: 40px;
     }
-    
+
     .foot ul {
         margin-bottom: 70px;
     }
-    
+
     .foot ul li{
-        padding: 10px 30px;
+        padding: 10px 25px;
     }
-    
+
     .flex-social{
         display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
     }
-    
+
     .flex-social a{
         margin: 0px 8px;
         padding: 10px;
@@ -490,14 +483,14 @@ nav{
     .dropdown{
         position: relative;
         float: right;
-        visibility: visible;
+        display: inline;
         align-self: center;
     }
 
     .menu {
         cursor: pointer;
     }
-      
+
     .dropdown-content {
         display: none;
         position: absolute;
@@ -509,7 +502,7 @@ nav{
         padding: 20px 40px 30px;
         font-size: 16px;
     }
-      
+
     .dropdown-content a {
         color: hsl(210, 4%, 67%);
         padding: 12px 22px;
@@ -517,7 +510,7 @@ nav{
         display: block;
         font-family: 'Barlow', sans-serif;
     }
-      
+
     .dropdown:hover .dropdown-content {
         display: block;
     }
@@ -539,7 +532,7 @@ nav{
     nav{
         display: none;
     }
-
+    
     .flextextimg h2{
         font-size: 33px;
         margin-bottom: 25px;
@@ -549,34 +542,72 @@ nav{
         margin: 50px 20px 60px;
         text-align: center;
     }
-    
+
     .transform p, .stand p{
         line-height: 1.75;
     }
-    
+
     .learns, .learnt{
         margin-top: 30px;
     }
-    
+
     .headpara{
-        margin: 400px 0px 70px;
+        margin: 400px 20px 70px;
     }
-    
-    .headpara h3{
-        font-size: 20px;
-    }
-    
+
     .graphic p, .photo p{
         opacity: 1;
         line-height: 1.5;
     }
-    
+
+    #main{
+        margin: 70px 20px;
+    }
+
+    #main h2{
+        letter-spacing: 5px;
+        margin-bottom: 30px;
+        font-size: 23px;
+    }
+
+    .people{
+        padding: 30px 5px;
+    }
+
+    #main img{
+        border-radius: 80px;
+        width: 80px;
+        height: 80px;
+        margin-bottom: 30px;
+    }
+
+    .para{
+        margin-bottom: 35px;
+    }
 }
 
 @media screen and (max-width: 1050px) {
     
     nav a{
-        padding: 15px 10px;
+        padding: 10px;
+    }
+
+    .transform, .stand{
+        margin: 50px 50px 60px;
+        text-align: center;
+    }
+
+    .headpara{
+        margin: 400px 70px 70px;
+        font-size: 16px;
+    }
+
+    #main{
+        margin: 90px 20px;
+    }
+
+    .people{
+        padding: 30px 10px;
     }
 }
 
@@ -585,17 +616,18 @@ nav{
     .headpara{
         margin: 400px 130px 70px;
     }
-}
-
-@media screen and (max-width: 1400px) {
 
     #main{
-        margin: 200px 20px;
+        margin: 90px 20px;
     }
-    
+
+    .people{
+        padding: 30px 20px;
+    }
 }
 
 @media screen and (min-width: 1500px) {
+    
     .transform, .stand{
         margin: 25%;
     }
