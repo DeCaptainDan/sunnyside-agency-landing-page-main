@@ -260,6 +260,7 @@ footer{
 
 a{
     text-decoration: none;
+    cursor: pointer;
 }
 
 footer li:hover{
@@ -280,10 +281,6 @@ footer li:hover{
 #contact:hover{
     color: white;
     background-color: #6FCFFF;
-}
-
-nav{
-    cursor: pointer;
 }
 
 .fillgreen:hover{
