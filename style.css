@@ -65,9 +65,8 @@ header h1{
 }
 
 .arrow-down{
-    position: relative;
-    left: 50%;
-    margin-top: 75px;
+    display: block;
+    margin: 100px auto;
 }
 
 .flextextimg{
@@ -363,9 +362,8 @@ footer li:hover{
     }
 
     .arrow-down{
-        position: relative;
-        left: 50%;
-        margin-top: 40px;
+        display: block;
+        margin: 0px auto;
     }
 
     .flextextimg{
@@ -574,9 +572,8 @@ footer li:hover{
     }
 
     .arrow-down{
-        position: relative;
-        left: 50%;
-        margin-top: 40px;
+        display: block;
+        margin: 30px auto;
     }
 
     .flextextimg{
